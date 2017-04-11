@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://uilogic.dp.toml.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="InvokeEcomWebServicesService" targetNamespace="http://uilogic.dp.toml.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://uilogic.dp.toml.com/" elementFormDefault="unqualified" targetNamespace="http://uilogic.dp.toml.com/" version="1.0">
+
+  <xs:element name="InvokeBitMapQueryWS" type="tns:InvokeBitMapQueryWS" />
+
+  <xs:element name="InvokeBitMapQueryWSResponse" type="tns:InvokeBitMapQueryWSResponse" />
+
+  <xs:element name="InvokeCaptureWS" type="tns:InvokeCaptureWS" />
+
+  <xs:element name="InvokeCaptureWSResponse" type="tns:InvokeCaptureWSResponse" />
+
+  <xs:element name="InvokeFullAuthReversalWS" type="tns:InvokeFullAuthReversalWS" />
+
+  <xs:element name="InvokeFullAuthReversalWSResponse" type="tns:InvokeFullAuthReversalWSResponse" />
+
+  <xs:element name="InvokePartialCaptureWS" type="tns:InvokePartialCaptureWS" />
+
+  <xs:element name="InvokePartialCaptureWSResponse" type="tns:InvokePartialCaptureWSResponse" />
+
+  <xs:element name="InvokeQueryWS" type="tns:InvokeQueryWS" />
+
+  <xs:element name="InvokeQueryWSResponse" type="tns:InvokeQueryWSResponse" />
+
+  <xs:element name="InvokeQueryWSTxnReport" type="tns:InvokeQueryWSTxnReport" />
+
+  <xs:element name="InvokeQueryWSTxnReportResponse" type="tns:InvokeQueryWSTxnReportResponse" />
+
+  <xs:element name="InvokeReversalWS" type="tns:InvokeReversalWS" />
+
+  <xs:element name="InvokeReversalWSResponse" type="tns:InvokeReversalWSResponse" />
+
+  <xs:element name="InvokeVoidWS" type="tns:InvokeVoidWS" />
+
+  <xs:element name="InvokeVoidWSResponse" type="tns:InvokeVoidWSResponse" />
+
+  <xs:complexType name="InvokeReversalWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="atrn" type="xs:string" />
+      <xs:element minOccurs="0" name="amount" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeReversalWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeVoidWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="atrn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeVoidWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeBitMapQueryWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="requestParameter" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeBitMapQueryWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeQueryWSTxnReport">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="sDate" type="xs:string" />
+      <xs:element minOccurs="0" name="eDate" type="xs:string" />
+      <xs:element minOccurs="0" name="sTime" type="xs:string" />
+      <xs:element minOccurs="0" name="eTime" type="xs:string" />
+      <xs:element minOccurs="0" name="txntype" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeQueryWSTxnReportResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeQueryWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="orderNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="atrn" type="xs:string" />
+      <xs:element minOccurs="0" name="txntype" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeQueryWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokePartialCaptureWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="atrn" type="xs:string" />
+      <xs:element minOccurs="0" name="amount" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokePartialCaptureWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeCaptureWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="atrn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeCaptureWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeFullAuthReversalWS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="merchantId" type="xs:string" />
+      <xs:element minOccurs="0" name="atrn" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InvokeFullAuthReversalWSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="InvokeReversalWSResponse">
+    <wsdl:part element="tns:InvokeReversalWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeQueryWSResponse">
+    <wsdl:part element="tns:InvokeQueryWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeVoidWSResponse">
+    <wsdl:part element="tns:InvokeVoidWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeQueryWS">
+    <wsdl:part element="tns:InvokeQueryWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeBitMapQueryWS">
+    <wsdl:part element="tns:InvokeBitMapQueryWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeVoidWS">
+    <wsdl:part element="tns:InvokeVoidWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeFullAuthReversalWS">
+    <wsdl:part element="tns:InvokeFullAuthReversalWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeCaptureWS">
+    <wsdl:part element="tns:InvokeCaptureWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokePartialCaptureWSResponse">
+    <wsdl:part element="tns:InvokePartialCaptureWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeBitMapQueryWSResponse">
+    <wsdl:part element="tns:InvokeBitMapQueryWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokePartialCaptureWS">
+    <wsdl:part element="tns:InvokePartialCaptureWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeQueryWSTxnReport">
+    <wsdl:part element="tns:InvokeQueryWSTxnReport" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeQueryWSTxnReportResponse">
+    <wsdl:part element="tns:InvokeQueryWSTxnReportResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeFullAuthReversalWSResponse">
+    <wsdl:part element="tns:InvokeFullAuthReversalWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeReversalWS">
+    <wsdl:part element="tns:InvokeReversalWS" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="InvokeCaptureWSResponse">
+    <wsdl:part element="tns:InvokeCaptureWSResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="InvokeEcomWebServices">
+    <wsdl:operation name="InvokeReversalWS">
+      <wsdl:input message="tns:InvokeReversalWS" name="InvokeReversalWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeReversalWSResponse" name="InvokeReversalWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeVoidWS">
+      <wsdl:input message="tns:InvokeVoidWS" name="InvokeVoidWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeVoidWSResponse" name="InvokeVoidWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeBitMapQueryWS">
+      <wsdl:input message="tns:InvokeBitMapQueryWS" name="InvokeBitMapQueryWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeBitMapQueryWSResponse" name="InvokeBitMapQueryWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeQueryWSTxnReport">
+      <wsdl:input message="tns:InvokeQueryWSTxnReport" name="InvokeQueryWSTxnReport">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeQueryWSTxnReportResponse" name="InvokeQueryWSTxnReportResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeQueryWS">
+      <wsdl:input message="tns:InvokeQueryWS" name="InvokeQueryWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeQueryWSResponse" name="InvokeQueryWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokePartialCaptureWS">
+      <wsdl:input message="tns:InvokePartialCaptureWS" name="InvokePartialCaptureWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokePartialCaptureWSResponse" name="InvokePartialCaptureWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCaptureWS">
+      <wsdl:input message="tns:InvokeCaptureWS" name="InvokeCaptureWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeCaptureWSResponse" name="InvokeCaptureWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeFullAuthReversalWS">
+      <wsdl:input message="tns:InvokeFullAuthReversalWS" name="InvokeFullAuthReversalWS">
+    </wsdl:input>
+      <wsdl:output message="tns:InvokeFullAuthReversalWSResponse" name="InvokeFullAuthReversalWSResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InvokeEcomWebServicesServiceSoapBinding" type="tns:InvokeEcomWebServices">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InvokeReversalWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeReversalWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeReversalWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeBitMapQueryWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeBitMapQueryWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeBitMapQueryWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeVoidWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeVoidWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeVoidWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeQueryWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeQueryWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeQueryWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeQueryWSTxnReport">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeQueryWSTxnReport">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeQueryWSTxnReportResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeCaptureWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeCaptureWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeCaptureWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokePartialCaptureWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokePartialCaptureWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokePartialCaptureWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InvokeFullAuthReversalWS">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="InvokeFullAuthReversalWS">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="InvokeFullAuthReversalWSResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InvokeEcomWebServicesService">
+    <wsdl:port binding="tns:InvokeEcomWebServicesServiceSoapBinding" name="InvokeEcomWebServicesPort">
+      <soap:address location="http://test.timesofmoney.com:80/direcpay/secure/InvokeEcomWebServices" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

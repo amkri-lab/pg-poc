@@ -1,0 +1,16 @@
+.env
+.asscache
+.gradle
+gradle/
+.idea
+.directory
+*.xml
+build
+out
+target
+classes
+application-*.yml
+application-*.groovy
+*.log
+lib/
+*.iml
